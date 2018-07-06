@@ -1,0 +1,110 @@
+<html>
+    <head>
+        <title>Calculate</title>
+    </head>
+    <body>
+
+        <link rel="stylesheet" href='../css/test1.css'>
+
+        
+    
+        <div class="jumbotron">
+            <div id="header">
+                <h1>Calculate</h1>
+            </div>
+        </div>
+        <script
+            src="http://code.jquery.com/jquery-3.3.1.min.js"
+            integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+            crossorigin="anonymous">
+        </script>
+
+        <div id="in">
+            <p>
+                <input id="var1" type="number">  <input id="var2" type="number">
+            </p>
+        </div>
+
+        <div id="out">
+            <p id="pOut"></p>
+        </div>
+
+
+
+        <div id="bttns">
+            <button id="MyAdd" title="button">
+                add
+            </button>
+            <button id="sub" title="button">
+                subtract
+            </button>
+            <button id="multiply" title="button">
+                multiply
+            </button>
+            <button id="divide" title="button">
+                divide
+            </button>
+        </div>
+        <div id="response">
+            <ul id="list">
+                <li>test list</li>
+            </ul>
+        </div>
+        
+
+        <script src='../js/test1.js'></script>
+
+        
+        
+<!--
+        <script>
+            $('#add').click(function(){
+                var action = 0;
+                //var val1 = $('#var1').val();
+                //var val2 = $('#var2').val();
+                var val3 = myfunction(action);
+                $('#list').append('<li>' + val3 + '</li>');
+            });
+            
+            $('#sub').click(function(){
+                var action = 1;
+                var val3 = myfunction(action);
+                $('#list').append('<li>' + val3 + '</li>');
+            });
+
+            $('#multiply').click(function(){
+                var action = 2;
+                var val3 = myfunction(action);
+                $('#list').append('<li>' + val3 + '</li>');
+            });
+            
+            $('#divide').click(function(){
+                var action = 3;
+                var val3 = myfunction(action);
+                $('#list').append('<li>' + val3 + '</li>');
+               
+            });
+            
+            function myfunction(action){
+                var val1 = $('#var1').val();
+                var val2 = $('#var2').val();
+                console.warn(val1 + ", " + val2 + " : "  + action);
+
+                if(action == 0){ 
+                    return val1+val2;
+                }
+                if(action == 1){
+                    return val1-val2;
+                }
+                if(action == 2){
+                    return val1*val2;
+                }
+                if(action == 3){
+                    return val1%val2;
+                }
+            };
+            </script>  
+        -->
+
+    </body>
+</html>
